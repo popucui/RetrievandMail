@@ -33,7 +33,7 @@ def get_counts(taxid):
 
   return info
 
-def send_mail(taxids = [6656, 9779], email_address = 'jie+noreply@popucui.me'):
+def send_mail(taxids = [6656, 9779], email_address = 'real.address@popucui.me'):
   dicts = []
   for taxid in taxids:
     counts_dict = get_counts(taxid)
@@ -42,11 +42,11 @@ def send_mail(taxids = [6656, 9779], email_address = 'jie+noreply@popucui.me'):
   time.sleep(3)
   SMTPserver = 'smtp.163.com'
   # your email address goes here
-  sender = "cuijie207@163.com"
+  sender = "real.address@163.com"
   destination = email_address
 
-  USERNAME = "cuijie207"
-  PASSWORD = "fy7946"
+  USERNAME = "username"
+  PASSWORD = "pa$$w0rd"
   content = """
   hello cui, this is your result:
   """ + str(dicts) + time.ctime() 
